@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+</head>
+<body>
+    <h1>我是注册页面</h1>
+
+    <form action="http://localhost:3000/regsiter" method="post">
+        <%-<h1>errMsg.networkErr</h1>%>
+        <span>用户名</span> <input type="email" name="email"><%=errMsg.emailErr%><br>
+        <span>昵称</span> <input type="text" name="nick_name"><%=errMsg.nick_nameErr%><br>
+        <span>密码</span> <input type="password" name="password"><%=errMsg.passwordErr%><br>
+        <span>确认密码</span> <input type="password" name="re_password"><%=errMsg.repasswordErr%><br>
+        <input type="submit" value="注册">
+    </form>
+</body>
+</html>
